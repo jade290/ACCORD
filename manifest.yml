@@ -1,0 +1,8 @@
+---
+applications:
+- name: tdgi_react_template
+  memory: 256M
+  host: tdgi-react-template
+  buildpack: nodejs_buildpack
+  command: node server
+  stack: cflinuxfs3

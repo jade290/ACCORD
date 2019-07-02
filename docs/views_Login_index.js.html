@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Source: views/Login/index.js | React Template</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+
+    
+</head>
+<body>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="">
+        
+            <a href="https://devcorps-dev.dev.east.paas.nga.mil" rel="noopener noreferrer" target="_blank">
+                <img src="img/DevCorpsLogo.png" width="100%" height="100%">
+            </a>
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">React Template</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Modules</h3><ul><li><a href="module-App.html">App</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:App_sub"></div></li><li><a href="module-components_ClassificationBanner.html">components/ClassificationBanner</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:components/ClassificationBanner_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-components_ClassificationBanner.html#~ClassificationBanner">ClassificationBanner</a></li></ul></div></li><li><a href="module-components_Footer.html">components/Footer</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:components/Footer_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-components_Footer.html#~Footer">Footer</a></li></ul></div></li><li><a href="module-components_Navbar.html">components/Navbar</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:components/Navbar_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-components_Navbar.html#~Navbar">Navbar</a></li></ul></div></li><li><a href="module-geoaxis.html">geoaxis</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:geoaxis_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-geoaxis.html#~doesValidTokenExist">doesValidTokenExist</a></li><li><a href="module-geoaxis.html#~getRedirectUrl">getRedirectUrl</a></li><li><a href="module-geoaxis.html#~getToken">getToken</a></li><li><a href="module-geoaxis.html#~getUserInfo">getUserInfo</a></li><li><a href="module-geoaxis.html#~loggedIn">loggedIn</a></li><li><a href="module-geoaxis.html#~parseCodeFromURL">parseCodeFromURL</a></li><li><a href="module-geoaxis.html#~removeToken">removeToken</a></li><li><a href="module-geoaxis.html#~storeToken">storeToken</a></li><li><a href="module-geoaxis.html#~tradeCodeForToken">tradeCodeForToken</a></li></ul></div></li><li><a href="module-index.html">index</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:index_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-index.html#~App">App</a></li><li><a href="module-index.html#~AsyncLogin">AsyncLogin</a></li><li><a href="module-index.html#~Login">Login</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-index.html#~renderApp">renderApp</a></li></ul></div></li><li><a href="module-views.html">views</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:views_sub"></div></li><li><a href="module-views_Home.html">views/Home</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:views/Home_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-views_Home.html#~Home">Home</a></li></ul></div></li><li><a href="module-views_Login.html">views/Login</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:views/Login_sub"></div></li><li><a href="module-views_NotFound.html">views/NotFound</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:views/NotFound_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-views_NotFound.html#~NotFound">NotFound</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="module-App-App.html">App</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:App~App_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-App-App.html#getUserInfo">getUserInfo</a></li><li><a href="module-App-App.html#renderRoute">renderRoute</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-App-App.html#componentDidMount">componentDidMount</a></li><li><a href="module-App-App.html#render">render</a></li></ul></div></li><li><a href="module-views_Login-Login.html">Login</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:views/Login~Login_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-views_Login-Login.html#renderAlert">renderAlert</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-views_Login-Login.html#componentDidMount">componentDidMount</a></li><li><a href="module-views_Login-Login.html#getRedirectUrl">getRedirectUrl</a></li><li><a href="module-views_Login-Login.html#render">render</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3><a href="global.html">Global</a></h3></div>
+</nav>
+<div id="resizer"></div>
+
+<div class="main" id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module views/Login */
+
+import React, { Component } from 'react';
+import { Alert, Jumbotron } from 'react-bootstrap';
+import gx from '../../controllers/geoaxis';
+
+import './style.less';
+
+/**
+* renders an authentication required message,
+* link to GX login page, and the DoD Notice and Consent
+* legalese
+*/
+class Login extends Component {
+    state = {
+        showAlert: false,
+        redirectUrl: '',
+    };
+
+    /** componenetDidMount method executes after render() successfully finishes */
+    componentDidMount() {
+        this.getRedirectUrl();
+    }
+
+    /** get GX login url from API */
+    async getRedirectUrl() {
+        const redirectUrl = await gx.getRedirectUrl();
+        if (redirectUrl !== null &amp;&amp; redirectUrl !== false) this.setState({ redirectUrl });
+        else {
+            this.setState({ showAlert: true });
+        }
+    }
+
+    /** render an error message if the GX login url could not be acquired */
+    renderAlert = (showAlert) => {
+        if (showAlert) {
+            return (&lt;Alert bsStyle="danger">An Error Occurred.&lt;/Alert>);
+        }
+        return ('');
+    }
+
+    /** return login component */
+    render() {
+        return (
+            &lt;div id="login">
+                &lt;Jumbotron id="login-jumbotron">
+                    &lt;h1>Authentication Required&lt;/h1>
+                &lt;/Jumbotron>
+                &lt;div id="login-body">
+                    {this.renderAlert(this.state.showAlert)}
+                    &lt;Alert bsStyle="warning" id="dod-alert">
+                        &lt;h3>DoD Notice and Consent Banner&lt;/h3>
+                        &lt;br />
+                        (U) You are accessing a U.S. Government (USG) Information
+                        System (IS) that is provided for USG-authorized use only.
+                        &lt;br />&lt;br />
+                        (U) By using this IS (which includes any device attached to
+                        this IS), you consent to the following conditions:
+                        &lt;br />&lt;br />
+                        The USG routinely intercepts and monitors communications on
+                        this IS for purposes including, but not limited to,
+                        penetration testing, COMSEC monitoring, network operations
+                        and defense, personnel misconduct (PM), law enforcement (LE),
+                        and counterintelligence (CI) investigations.
+                        &lt;br />&lt;br />
+                        At any time, the USG may inspect and seize data stored on this IS.
+                        &lt;br />&lt;br />
+                        Communications using, or data stored on, this IS are not private,
+                        are subject to routine monitoring, interception and search, and
+                        may be disclosed or used for any USG-authorized purpose.
+                        &lt;br />&lt;br />
+                        This IS includes security measures (e.g., authentication and
+                        access controls) to protect USG interests – not for your
+                        personal benefit or privacy.
+                        &lt;br />&lt;br />
+                        Notwithstanding the above, using this IS does not constitute
+                        consent to PM, LE or CI investigative searching or monitoring
+                        of the content of privileged communications, or work product,
+                        related to personal representation or services by attorneys,
+                        psychotherapists, or clergy, and theirs assistants. Such
+                        communications and work product are private and confidential.
+                        See User Agreement for details.
+                    &lt;/Alert>
+                    &lt;a className="btn btn-primary" href={this.state.redirectUrl}>Please login with GeoAxis&lt;/a>
+                &lt;/div>
+            &lt;/div>
+        );
+    }
+}
+
+export default Login;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<footer>
+    <img class="logo" src="img/DevCorpsLogo.png" style="">
+    <div class="footer-text">NGA DevCorps</div>
+</footer>
+<script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = '_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
+</body>
+</html>
