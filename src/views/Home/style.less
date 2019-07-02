@@ -1,0 +1,70 @@
+@import '../../theme.less';
+
+#home {
+    background: @color-light;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .alert {
+        h3 {
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .home-about {
+       margin: auto;
+       width: 50%;
+       min-width: 900px;
+       background: @color-white;
+       padding: 20px;
+       border: 1px solid @color-primary;
+       text-align: left;
+       .stack {
+           width: 50%;
+           display: inline-block;
+           padding: 6px;
+           border: 3px solid @color-success;
+           h5 {
+               text-align: center;
+               color: @color-success;
+               font-size: 2.4em;
+           }
+           h2 {
+               text-align: center;
+               background-color: @color-success;
+               color: @color-white;
+               font-size: 44px;
+               text-transform: capitalize;
+               margin-top: 0 !important;
+               padding: 0;
+           }
+           hr {
+               border-top: 3px solid @color-success;
+               margin-left: 0;
+               margin-right: 0;
+               width: 100%;
+           }
+       }
+       .about {
+           width: 50%;
+           display: inline-block;
+           vertical-align: top;
+           padding: 10px;
+           h2 {
+               text-align: center;
+               background-color: @color-primary;
+               color: @color-white;
+               font-size: 44px;
+               text-transform: capitalize;
+               margin-top: 0 !important;
+           }
+           pre {
+              border-radius: 0 !important;
+              background: @color-black;
+              color: lighten(@color-success, 20%);
+          }
+          a {
+             color: @color-success;
+         }
+       }
+   }
+}

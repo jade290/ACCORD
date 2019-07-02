@@ -1,0 +1,11 @@
+{
+    "appName": "DevCorps React Template",
+    "useEcobar": true,
+    "classificationBannerColor": "green",
+    "maximumSystemClassification": "UNCLASSIFIED",
+    "geoaxis" : {
+        "redirectUrl" : "https://tdgi-react-template.dev.east.paas.nga.mil",
+        "enabled" : false
+    },
+    "apiUrl": "https://tdgi-react-template.dev.east.paas.nga.mil/api"
+}
