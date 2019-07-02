@@ -1,0 +1,12 @@
+{
+    "geoaxis" : {
+        "redirectUrl" : "http://lvh.me:8080",
+        "enabled" : true
+    },
+    "contact" : {
+        "feedbackUrl" : "/feedback",
+        "POCname" : "Site POC Name",
+        "POCemail" : "POCemail@email.com"
+    },
+    "apiUrl": "http://api.example"
+}

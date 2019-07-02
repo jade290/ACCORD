@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>APP_NAME</title>
+
+    <!-- Favicon link is requried to pass SonarQube scan,
+        Favicon is actually set by ecobar script -->
+    <link rel="shortcut icon" href="./src/imgs/myicon.ico" />
+
+    <!-- NGA Ecobar -->
+    <script type="text/javascript" src="https://cdn.nga.mil/libs/jQuery/versions/1.12.4/jquery.js"></script>
+	  <script type="text/javascript" src="https://cdn.nga.mil/libs/ecobar/versions/3.0.0/ecobar.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://cdn.nga.mil/libs/Bootstrap/versions/3.3.6/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.nga.mil/libs/Bootstrap/versions/3.3.6/bootstrap.min.css"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+    // build the default Ecobar
+
+        var ecobarLocalConfig = {
+            "app_id": "sfuxus0170105",
+        }
+
+        ecobarApp(ecobarLocalConfig);
+    </script>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" style="min-height: calc(100vh-500px)"></div>
+  </body>
+</html>
