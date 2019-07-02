@@ -25,8 +25,13 @@ class Navbar extends Component {
       modal: false,
     };
     toggleCollapse = () => {
-      this.setState({ isOpen: !this.state.isOpen, modal: !this.state.modal });
+      this.setState({ isOpen: !this.state.isOpen });
     }
+    toggle = () => {
+        this.setState({
+          modal: !this.state.modal,
+        });
+      }
 
     /** renders the app's navigation bar */
     render() {
@@ -124,7 +129,7 @@ class Navbar extends Component {
                                 <MDBDropdownMenu className="dropdown-default">
                                     <MDBDropdownItem href="#!">System Administration</MDBDropdownItem>
                                     <MDBDropdownItem href="#!">System Operation</MDBDropdownItem>
-                                    <MDBDropdownItem href={this.toggle}>About ACCORD</MDBDropdownItem>
+                                    <MDBDropdownItem href="#" onClick={this.toggle}>About ACCORD</MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>
@@ -140,20 +145,21 @@ class Navbar extends Component {
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>
+                        <MDBContainer>
+                            <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
+                                <MDBModalHeader toggle={this.toggle}>About ACCORD</MDBModalHeader>
+                                <MDBModalBody>
+                                    Automated Cataloging and Compression of Raster Data<br />
+                                    Version 1.0<br />
+                                    Produced by Intergraph Federal
+                                </MDBModalBody>
+                                <MDBModalFooter>
+                                    <MDBBtn color="secondary" onClick={this.toggle}>Close</MDBBtn>
+                                </MDBModalFooter>
+                            </MDBModal>
+                        </MDBContainer>
                     </MDBNavbarNav>
                 </MDBCollapse>
-                <MDBContainer>
-                    <MDBBtn onClick={this.toggle}>Click Me</MDBBtn>
-                    <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
-                        <MDBModalHeader toggle={this.toggle}>About ACCORD</MDBModalHeader>
-                        <MDBModalBody>
-                        (...)
-                        </MDBModalBody>
-                        <MDBModalFooter>
-                            <MDBBtn color="secondary" onClick={this.toggle}>Close</MDBBtn>
-                        </MDBModalFooter>
-                    </MDBModal>
-                </MDBContainer>
             </MDBNavbar>
         );
     }
