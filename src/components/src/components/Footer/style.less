@@ -1,0 +1,40 @@
+@import '../../theme.less';
+
+footer {
+    // because the NGA logo provided does not have a transparent background,
+    // the footer background should be left at #000 instead of being pulled
+    // from the app's configurable color scheme
+    background: #000;
+    color: @color-white;
+    text-align: right;
+    #east-addr,
+    #west-addr,
+    #arnold-addr {
+        display: inline-block;
+        text-align: left;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    h3 {
+        font-size: 1.3em;
+        margin: 0;
+        font-weight: bold;
+    }
+    #nga-logo {
+        float: left;
+        font-size: 2em;
+        margin: 10px;
+        img {
+            width: 65px;
+            margin-right: 15px;
+            // the NGA logo provided is a black line drawing on a white background
+            // this CSS filter converts the image to a white line drawing on a black background
+            filter: invert(100%);
+        }
+    }
+    .classification-banner {
+        margin-top: 10px;
+    }
+}

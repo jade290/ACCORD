@@ -1,0 +1,56 @@
+@import '../../theme.less';
+
+#alerts {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: visible;
+    background: transparent;
+    width: 100%;
+    z-index: 9999;
+    .alert {
+        display: block;
+        background: @color-white;
+        width: 100%;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 3px solid @color-accent;
+        box-shadow: 0 10px 10px 0 @color-dark;
+        .badge {
+            margin-right: 10px;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        .close-btn {
+            float: right;
+            background: none;
+            border: 0;
+            padding: 0;
+            &:hover {
+                color: @color-danger;
+                transform: scale(1.2);
+            }
+            svg {
+                font-size: 2em;
+                vertical-align: middle;
+            }
+        }
+        &.success {
+            border-color: @color-success;
+            .badge {
+                background: @color-success;
+            }
+        }
+        &.error {
+            border-color: @color-danger;
+            .badge {
+                background: @color-danger;
+            }
+        }
+    }
+}

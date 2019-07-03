@@ -1,0 +1,39 @@
+@import '../../theme.less';
+
+#navbar {
+    width: 100%;
+    .navbar-menu {
+        width: 100%;
+        border-bottom: 1px solid @color-light;
+        padding: 5px;
+        .navbar-logout,
+        .navbar-user,
+        .navbar-option {
+            padding: 5px;
+            margin-right: 10px;
+            color: inherit;
+            font-weight: bold;
+        }
+        .navbar-logout,
+        .navbar-user {
+            float: right;
+            margin-top: -5px;
+            background: none;
+            border: 0;
+        }
+        .navbar-logout:hover,
+        .navbar-user:hover,
+        .navbar-option.active,
+        .navbar-option:hover {
+            text-decoration: none;
+            background: @color-light;
+        }
+        .navbar-option:first-child,
+        .navbar-option:first-child.active {
+            background: none;
+        }
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
